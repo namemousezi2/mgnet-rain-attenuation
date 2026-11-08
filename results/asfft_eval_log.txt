@@ -1,0 +1,47 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asfft_eval.py:13: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asfft_eval.py:19: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  asf = loadasf(torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev))
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asfft_eval.py:22: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  asff = loadasf(torch.load(str(pft), map_location=dev))
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+Toflow based on Deformable Conv !!! 
+
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+done front_road n windows 20
+done back_road n windows 20
+done house n windows 20
+done p4_1931 n windows 20
+done p4_1933 n windows 20
+done p4_1934 n windows 20
+
+=== flicker removed % (raw, no dry correction) over 6 clips ===
+  med9    45.6  [ 42.7,  48.3]   sharp 0.970
+  MGs     43.9  [ 40.4,  47.2]   sharp 0.971
+  ASF      7.6  [  1.9,  13.2]   sharp 0.996
+  ASFft   16.3  [ 11.4,  21.0]   sharp 0.986
+shop1        {'med9': 0.628, 'MGs': 0.848, 'ASF': 0.936, 'ASFft': 0.919}
+shop2        {'med9': 0.857, 'MGs': 0.9, 'ASF': 0.983, 'ASFft': 0.967}
+shop3        {'med9': 0.847, 'MGs': 0.933, 'ASF': 0.956, 'ASFft': 0.956}
+shop_before  {'med9': 0.924, 'MGs': 0.982, 'ASF': 0.958, 'ASFft': 0.976}
+shop_after   {'med9': 0.833, 'MGs': 0.967, 'ASF': 1.0, 'ASFft': 0.958}
+
+=== the two axes of Table 9 ===
+         flicker%   kept-rate  kept+prot 
+  med9   45.6       0.818      0.919     
+  MGs    43.9       0.926      0.946     
+  ASF    7.6        0.967      0.973     
+  ASFft  16.3       0.955      0.969     
+DONE

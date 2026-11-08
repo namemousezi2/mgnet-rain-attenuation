@@ -1,0 +1,33 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\nturain_eval.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf = MF().to(dev); mf.load_state_dict(torch.load(ck / "student_mf7.pth", map_location=dev)["model_state_dict"]); mf.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\nturain_eval.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf6 = MF().to(dev); mf6.load_state_dict(torch.load(ck / "student_mf6.pth", map_location=dev)["model_state_dict"]); mf6.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\nturain_eval.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mg = MG().to(dev); mg.load_state_dict(torch.load(ck / "student_mg.pth", map_location=dev)["model_state_dict"]); mg.eval()
+a1 frames 168 168 164 size (480, 640, 3)
+a1 shift16=22.5 {'in': [28.25, 0.91], 'MG': [26.14, 0.8], 'mf7': [26.11, 0.8], 'A4': [26.31, 0.83], 'median9': [25.35, 0.78], 'median9_noprot': [16.42, 0.42], 'SPAC_published': [14.51, 0.28]}
+a2 frames 116 116 112 size (480, 640, 3)
+a2 shift16=37.7 {'in': [28.17, 0.92], 'MG': [26.54, 0.85], 'mf7': [26.29, 0.84], 'A4': [26.77, 0.87], 'median9': [25.9, 0.83], 'median9_noprot': [20.02, 0.58], 'SPAC_published': [18.64, 0.48]}
+a3 frames 125 125 121 size (480, 640, 3)
+a3 shift16=33.6 {'in': [27.69, 0.89], 'MG': [24.56, 0.69], 'mf7': [24.83, 0.7], 'A4': [25.01, 0.75], 'median9': [24.19, 0.68], 'median9_noprot': [19.27, 0.46], 'SPAC_published': [17.36, 0.33]}
+a4 frames 298 298 294 size (480, 640, 3)
+a4 shift16=5.4 {'in': [31.34, 0.93], 'MG': [31.98, 0.94], 'mf7': [31.95, 0.94], 'A4': [32.3, 0.95], 'median9': [31.62, 0.93], 'median9_noprot': [25.74, 0.88], 'SPAC_published': [23.62, 0.84]}
+b1 frames 256 256 252 size (480, 640, 3)
+b1 shift16=31.1 {'in': [28.71, 0.89], 'MG': [27.96, 0.85], 'mf7': [27.47, 0.85], 'A4': [27.72, 0.86], 'median9': [26.34, 0.82], 'median9_noprot': [18.37, 0.58], 'SPAC_published': [16.28, 0.48]}
+b2 frames 250 250 246 size (480, 640, 3)
+b2 shift16=20.5 {'in': [29.11, 0.87], 'MG': [29.01, 0.9], 'mf7': [27.78, 0.88], 'A4': [27.86, 0.89], 'median9': [26.91, 0.87], 'median9_noprot': [19.38, 0.68], 'SPAC_published': [17.88, 0.62]}
+b3 frames 219 219 215 size (480, 640, 3)
+b3 shift16=18.1 {'in': [31.01, 0.92], 'MG': [29.79, 0.87], 'mf7': [29.82, 0.87], 'A4': [30.11, 0.89], 'median9': [28.91, 0.86], 'median9_noprot': [17.74, 0.62], 'SPAC_published': [16.39, 0.54]}
+b4 frames 250 250 246 size (480, 640, 3)
+b4 shift16=11.9 {'in': [27.89, 0.88], 'MG': [27.72, 0.86], 'mf7': [27.59, 0.86], 'A4': [27.72, 0.87], 'median9': [27.1, 0.84], 'median9_noprot': [19.96, 0.58], 'SPAC_published': [17.61, 0.47]}
+
+PSNR/SSIM per clip (camera shift px/16 frames)
+a1 shift 22.5 in:28.25/0.910  MG:26.14/0.803  mf7:26.11/0.801  A4:26.31/0.831  median9:25.35/0.782  median9_noprot:16.42/0.421  SPAC_published:14.51/0.281
+a2 shift 37.7 in:28.17/0.921  MG:26.54/0.849  mf7:26.29/0.843  A4:26.77/0.867  median9:25.90/0.828  median9_noprot:20.02/0.578  SPAC_published:18.64/0.484
+a3 shift 33.6 in:27.69/0.888  MG:24.56/0.687  mf7:24.83/0.697  A4:25.01/0.752  median9:24.19/0.676  median9_noprot:19.27/0.462  SPAC_published:17.36/0.327
+a4 shift 5.4 in:31.34/0.932  MG:31.98/0.936  mf7:31.95/0.937  A4:32.30/0.947  median9:31.62/0.932  median9_noprot:25.74/0.880  SPAC_published:23.62/0.839
+b1 shift 31.1 in:28.71/0.887  MG:27.96/0.853  mf7:27.47/0.846  A4:27.72/0.864  median9:26.34/0.822  median9_noprot:18.37/0.582  SPAC_published:16.28/0.484
+b2 shift 20.5 in:29.11/0.872  MG:29.01/0.896  mf7:27.78/0.881  A4:27.86/0.887  median9:26.91/0.867  median9_noprot:19.38/0.681  SPAC_published:17.88/0.619
+b3 shift 18.1 in:31.01/0.923  MG:29.79/0.872  mf7:29.82/0.870  A4:30.11/0.890  median9:28.91/0.857  median9_noprot:17.74/0.621  SPAC_published:16.39/0.535
+b4 shift 11.9 in:27.89/0.882  MG:27.72/0.864  mf7:27.59/0.861  A4:27.72/0.874  median9:27.10/0.844  median9_noprot:19.96/0.585  SPAC_published:17.61/0.470
+DONE

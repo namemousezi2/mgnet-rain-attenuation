@@ -1,0 +1,16 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(ROOT / "experiments_v2" / "checkpoints" / "prenet_ft_real.pth", map_location="cpu")["model_state_dict"])
+loaded prenet_ft
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:47: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(TP / "Restormer/Deraining/pretrained_models/deraining.pth", map_location="cpu")["params"])
+loaded restormer
+DRY {'in': 0.0005741378517996054, 'PReNet': 0.0011855260454467498, 'Restormer': 0.0005094010557513684}
+IMG_1772 {'removed_PReNet': 0.427, 'sharp_nonrain_PReNet': 0.838, 'removed_Restormer': 0.078, 'sharp_nonrain_Restormer': 0.921}
+IMG_1773 {'removed_PReNet': 0.595, 'sharp_nonrain_PReNet': 0.887, 'removed_Restormer': 0.018, 'sharp_nonrain_Restormer': 0.951}
+IMG_1771 {'removed_PReNet': 0.479, 'sharp_nonrain_PReNet': 0.81, 'removed_Restormer': 0.07, 'sharp_nonrain_Restormer': 0.941}
+IMG_1769 {'removed_PReNet': 0.366, 'sharp_nonrain_PReNet': 0.723, 'removed_Restormer': 0.058, 'sharp_nonrain_Restormer': 0.949}
+EVALDONE
+video heavy
+video medium
+video light
+DONE

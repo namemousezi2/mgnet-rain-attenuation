@@ -1,0 +1,46 @@
+train crops 750 streak px frac 0.3033775
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\train_s2vd_ft.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(torch.load(str(S2 / "model_states" / "derainer_rho05.pt"), map_location=dev))
+S2VD params K 525.26
+train 200 0.0448 elapsed_min 0.6
+train 400 0.0275 elapsed_min 1.2
+train 600 0.026 elapsed_min 1.7
+train 800 0.0632 elapsed_min 2.3
+train 1000 0.0301 elapsed_min 2.9
+train 1200 0.0662 elapsed_min 3.5
+train 1400 0.0818 elapsed_min 4.1
+train 1600 0.0593 elapsed_min 4.7
+train 1800 0.0244 elapsed_min 5.3
+train 2000 0.0344 elapsed_min 5.9
+train 2200 0.0236 elapsed_min 6.6
+train 2400 0.027 elapsed_min 7.2
+train 2600 0.0263 elapsed_min 7.8
+train 2800 0.0344 elapsed_min 8.4
+train 3000 0.036 elapsed_min 9.0
+train 3200 0.0457 elapsed_min 9.6
+train 3400 0.0509 elapsed_min 10.2
+train 3600 0.0493 elapsed_min 10.8
+train 3800 0.0657 elapsed_min 11.4
+train 4000 0.0571 elapsed_min 12.0
+train 4200 0.065 elapsed_min 12.6
+train 4400 0.0403 elapsed_min 13.2
+train 4600 0.0157 elapsed_min 13.8
+train 4800 0.0263 elapsed_min 14.4
+train 5000 0.027 elapsed_min 15.0
+train 5200 0.0165 elapsed_min 15.6
+train 5400 0.0834 elapsed_min 16.2
+train 5600 0.0617 elapsed_min 16.8
+train 5800 0.0244 elapsed_min 17.4
+train 6000 0.034 elapsed_min 18.0
+train 6200 0.0231 elapsed_min 18.6
+train 6400 0.0277 elapsed_min 19.2
+train 6600 0.0233 elapsed_min 19.8
+train 6800 0.0576 elapsed_min 20.5
+train 7000 0.0295 elapsed_min 21.0
+train 7200 0.081 elapsed_min 21.6
+train 7400 0.0142 elapsed_min 22.2
+train 7600 0.0242 elapsed_min 22.8
+train 7800 0.0608 elapsed_min 23.4
+train 8000 0.0379 elapsed_min 24.0
+trained iterations 8008
+DONE

@@ -1,0 +1,23 @@
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_asf2.py:6: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sd = torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev); sd = {k.replace("module.", "", 1): v for k, v in sd.items()}
+<All keys matched successfully>
+params 3087459
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+ASF fps 640x360 (net only, 3 frames, incl. host copy): 3.876804919802447
+DRY {'in': 0.0005741378517996054, 'ASF-Net': 0.0005809185095131397}
+IMG_1772 {'removed_ASF-Net': 0.464, 'sharp_nonrain_ASF-Net': 0.999}
+IMG_1773 {'removed_ASF-Net': 0.671, 'sharp_nonrain_ASF-Net': 1.0}
+IMG_1771 {'removed_ASF-Net': 0.469, 'sharp_nonrain_ASF-Net': 0.998}
+IMG_1769 {'removed_ASF-Net': 0.337, 'sharp_nonrain_ASF-Net': 0.992}
+EVALDONE
+DONE

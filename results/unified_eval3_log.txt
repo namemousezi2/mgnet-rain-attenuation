@@ -1,0 +1,177 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_eval3.py:22: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf = MF().to(dev); mf.load_state_dict(torch.load(ck / "student_mf7.pth", map_location=dev)["model_state_dict"]); mf.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_eval3.py:21: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(ROOT / "experiments_v2" / "checkpoints" / "prenet_ft_real.pth", map_location="cpu")["model_state_dict"])
+loaded prenet_ft
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:47: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(TP / "Restormer/Deraining/pretrained_models/deraining.pth", map_location="cpu")["params"])
+loaded restormer
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_eval3.py:41: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sv = DerainNet(n_features=32, n_resblocks=8).to(dev); sv.load_state_dict(torch.load(str(S2 / "model_states" / "derainer_rho05.pt"), map_location=dev)); sv.eval()
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_eval3.py:44: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  asf = TOFlow().to(dev); sd_ = torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev)
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+done front_road n windows 20
+done back_road n windows 20
+done house n windows 20
+done house_dry
+done p4_1931 n windows 20
+done p4_1931_dry
+done p4_1933 n windows 20
+done p4_1933_dry
+done p4_1934 n windows 20
+done p4_1934_dry
+
+NOTE: flicker and sharpness are for the BARE output of each method (no motion protection).
+
+=== RAW flicker removed % [95% CI over windows] | sharpness ===
+front_road n=20  flicker_in=0.0035
+   med3         41.6 [  35.8,  46.1]  sharp 0.981
+   med5         50.0 [  43.7,  54.6]  sharp 0.975
+   med9         56.3 [  49.8,  61.1]  sharp 0.967
+   med15        61.2 [  55.0,  65.9]  sharp 0.957
+   med21        64.1 [  57.9,  68.8]  sharp 0.950
+   MG           48.7 [  41.7,  53.7]  sharp 0.970
+   MGs_s1       56.2 [  49.4,  61.1]  sharp 0.966
+   MGs_s2       56.0 [  49.6,  60.8]  sharp 0.967
+   MGs_s3       56.2 [  50.3,  61.1]  sharp 0.966
+   mf7          33.3 [  26.2,  38.9]  sharp 0.978
+   S2VD         28.9 [  23.3,  33.4]  sharp 0.836
+   ASF          19.8 [  13.3,  25.4]  sharp 0.990
+   PReNet        3.3 [  -2.7,   8.7]  sharp 0.873
+   Restormer     6.2 [   0.0,  11.9]  sharp 0.922
+back_road n=20  flicker_in=0.0020
+   med3         28.0 [  14.2,  40.2]  sharp 0.980
+   med5         38.0 [  26.7,  48.0]  sharp 0.970
+   med9         49.5 [  41.9,  56.3]  sharp 0.954
+   med15        59.1 [  54.2,  63.4]  sharp 0.939
+   med21        64.0 [  60.2,  67.2]  sharp 0.929
+   MG           31.0 [  18.7,  42.9]  sharp 0.966
+   MGs_s1       42.1 [  32.1,  51.8]  sharp 0.960
+   MGs_s2       43.0 [  32.3,  52.6]  sharp 0.958
+   MGs_s3       42.6 [  30.3,  53.5]  sharp 0.958
+   mf7          14.6 [   0.2,  28.7]  sharp 0.973
+   S2VD         20.5 [   6.0,  34.1]  sharp 0.797
+   ASF           1.5 [ -18.1,  19.1]  sharp 0.998
+   PReNet      -18.0 [ -37.6,   0.3]  sharp 0.928
+   Restormer     2.9 [ -14.6,  18.8]  sharp 0.912
+house n=20  flicker_in=0.0012
+   med3         23.4 [  17.2,  29.1]  sharp 0.994
+   med5         31.5 [  25.1,  36.8]  sharp 0.990
+   med9         40.8 [  35.6,  45.3]  sharp 0.982
+   med15        50.1 [  46.3,  52.9]  sharp 0.973
+   med21        54.7 [  51.5,  57.0]  sharp 0.967
+   MG           26.3 [  19.9,  32.0]  sharp 0.985
+   MGs_s1       39.7 [  32.7,  44.8]  sharp 0.982
+   MGs_s2       40.4 [  35.0,  44.5]  sharp 0.982
+   MGs_s3       40.7 [  35.6,  45.1]  sharp 0.982
+   mf7          11.2 [   2.9,  18.6]  sharp 0.988
+   S2VD         22.3 [  15.7,  28.5]  sharp 0.874
+   ASF           3.4 [  -5.6,  11.8]  sharp 0.998
+   PReNet      -20.8 [ -30.8, -11.8]  sharp 0.936
+   Restormer     0.9 [  -7.1,   9.5]  sharp 0.953
+p4_1931 n=20  flicker_in=0.0026
+   med3         16.0 [   8.8,  22.8]  sharp 0.992
+   med5         21.7 [  15.3,  28.4]  sharp 0.983
+   med9         31.0 [  24.5,  36.6]  sharp 0.967
+   med15        41.0 [  36.3,  45.6]  sharp 0.950
+   med21        46.2 [  42.1,  50.1]  sharp 0.936
+   MG           28.0 [  22.1,  33.9]  sharp 0.968
+   MGs_s1       31.0 [  25.1,  36.7]  sharp 0.967
+   MGs_s2       30.9 [  25.3,  36.5]  sharp 0.967
+   MGs_s3       31.0 [  24.9,  36.7]  sharp 0.967
+   mf7          17.4 [  10.9,  24.3]  sharp 0.971
+   S2VD         12.0 [   3.8,  19.8]  sharp 0.869
+   ASF           0.6 [  -8.7,   9.9]  sharp 0.999
+   PReNet      -12.9 [ -23.3,  -2.3]  sharp 0.997
+   Restormer     1.6 [  -7.7,  11.0]  sharp 0.951
+p4_1933 n=20  flicker_in=0.0023
+   med3         33.0 [  16.0,  47.6]  sharp 0.988
+   med5         38.6 [  22.4,  52.6]  sharp 0.982
+   med9         51.9 [  43.5,  59.8]  sharp 0.973
+   med15        58.6 [  50.6,  65.1]  sharp 0.967
+   med21        63.6 [  59.6,  67.1]  sharp 0.961
+   MG           44.8 [  35.2,  53.2]  sharp 0.974
+   MGs_s1       50.7 [  41.5,  59.0]  sharp 0.973
+   MGs_s2       50.1 [  41.3,  58.8]  sharp 0.973
+   MGs_s3       50.8 [  41.4,  59.0]  sharp 0.973
+   mf7          29.2 [  15.9,  41.6]  sharp 0.981
+   S2VD         25.7 [  11.3,  37.7]  sharp 0.813
+   ASF          15.7 [  -4.4,  33.2]  sharp 0.992
+   PReNet       -4.7 [ -25.9,  14.4]  sharp 0.967
+   Restormer     4.9 [ -13.1,  21.1]  sharp 0.911
+p4_1934 n=20  flicker_in=0.0016
+   med3         26.2 [  18.3,  32.8]  sharp 0.992
+   med5         35.2 [  28.7,  40.0]  sharp 0.987
+   med9         44.0 [  38.8,  48.0]  sharp 0.978
+   med15        50.5 [  46.8,  53.7]  sharp 0.966
+   med21        54.1 [  50.8,  57.0]  sharp 0.955
+   MG           34.2 [  26.3,  39.7]  sharp 0.981
+   MGs_s1       43.8 [  38.7,  47.9]  sharp 0.978
+   MGs_s2       43.5 [  38.3,  47.6]  sharp 0.978
+   MGs_s3       43.7 [  38.5,  47.7]  sharp 0.978
+   mf7          18.5 [   8.7,  25.7]  sharp 0.986
+   S2VD         21.1 [  14.7,  26.2]  sharp 0.841
+   ASF           4.9 [  -5.3,  13.1]  sharp 0.998
+   PReNet      -12.0 [ -22.6,  -3.7]  sharp 0.939
+   Restormer     4.8 [  -4.6,  11.9]  sharp 0.909
+
+=== DRY-CORRECTED (only clips with f_dry/f_rain <= 0.50) ===
+house EXCLUDED  f_dry/f_rain=0.63
+p4_1931 EXCLUDED  f_dry/f_rain=1.06
+p4_1933 f_dry/f_rain=0.45
+   med3         49.2
+   med5         55.2
+   med9         71.8
+   med15        75.7
+   med21        82.3
+   MG           65.8
+   MGs_s1       69.7
+   MGs_s2       68.7
+   MGs_s3       69.8
+   mf7          54.2
+   S2VD         23.8
+   ASF          29.4
+   PReNet        9.5
+   Restormer     7.4
+p4_1934 EXCLUDED  f_dry/f_rain=0.83
+
+=== MG-strong across 3 seeds: raw flicker removed % (mean +- SD) ===
+   front_road    56.1 +- 0.1
+   back_road     42.6 +- 0.4
+   house         40.3 +- 0.4
+   p4_1931       30.9 +- 0.0
+   p4_1933       50.5 +- 0.3
+   p4_1934       43.7 +- 0.1
+YOLO cctv_shop1.mp4 {'med3': 0.809, 'med5': 0.734, 'med9': 0.65, 'med15': 0.654, 'med21': 0.676, 'MG': 0.966, 'MGs_s1': 0.926, 'MGs_s2': 0.89, 'MGs_s3': 0.897, 'mf7': 0.836} | prot: {'med3': 0.95, 'med5': 0.935, 'med9': 0.933, 'med15': 0.912, 'med21': 0.895, 'MG': 0.962, 'MGs_s1': 0.954, 'MGs_s2': 0.945, 'MGs_s3': 0.947, 'mf7': 0.919}
+YOLO cctv_shop2.mp4 {'med3': 0.848, 'med5': 0.85, 'med9': 0.835, 'med15': 0.807, 'med21': 0.793, 'MG': 0.92, 'MGs_s1': 0.904, 'MGs_s2': 0.891, 'MGs_s3': 0.902, 'mf7': 0.899} | prot: {'med3': 0.905, 'med5': 0.916, 'med9': 0.911, 'med15': 0.874, 'med21': 0.832, 'MG': 0.933, 'MGs_s1': 0.91, 'MGs_s2': 0.917, 'MGs_s3': 0.91, 'mf7': 0.911}
+YOLO cctv_shop3.mp4 {'med3': 0.835, 'med5': 0.809, 'med9': 0.801, 'med15': 0.801, 'med21': 0.826, 'MG': 0.968, 'MGs_s1': 0.929, 'MGs_s2': 0.936, 'MGs_s3': 0.936, 'mf7': 0.878} | prot: {'med3': 0.981, 'med5': 0.964, 'med9': 0.955, 'med15': 0.955, 'med21': 0.96, 'MG': 0.968, 'MGs_s1': 0.962, 'MGs_s2': 0.955, 'MGs_s3': 0.968, 'mf7': 0.957}
+YOLO cctv_shop_before+rain.mp4 {'med3': 0.901, 'med5': 0.9, 'med9': 0.887, 'med15': 0.887, 'med21': 0.887, 'MG': 0.949, 'MGs_s1': 0.952, 'MGs_s2': 0.934, 'MGs_s3': 0.945, 'mf7': 0.934} | prot: {'med3': 0.965, 'med5': 0.956, 'med9': 0.952, 'med15': 0.967, 'med21': 0.961, 'MG': 0.959, 'MGs_s1': 0.957, 'MGs_s2': 0.949, 'MGs_s3': 0.952, 'mf7': 0.945}
+YOLO cctv_shop_after+rain.mp4 {'med3': 0.861, 'med5': 0.839, 'med9': 0.831, 'med15': 0.831, 'med21': 0.835, 'MG': 0.977, 'MGs_s1': 0.966, 'MGs_s2': 0.9, 'MGs_s3': 0.898, 'mf7': 0.894} | prot: {'med3': 0.959, 'med5': 0.946, 'med9': 0.931, 'med15': 0.911, 'med21': 0.887, 'MG': 0.977, 'MGs_s1': 0.971, 'MGs_s2': 0.951, 'MGs_s3': 0.957, 'mf7': 0.951}
+
+=== PARETO (mean over rain clips) ===
+  (kept-rate shown bare | with motion protection)
+  med3       flicker   28.0   kept-rate 0.851   sharp 0.988
+  med5       flicker   35.8   kept-rate 0.826   sharp 0.981
+  med9       flicker   45.6   kept-rate 0.801   sharp 0.970
+  med15      flicker   53.4   kept-rate 0.796   sharp 0.959
+  med21      flicker   57.8   kept-rate 0.803   sharp 0.950
+  MG         flicker   35.5   kept-rate 0.956   sharp 0.974
+  MGs_s1     flicker   43.9   kept-rate 0.935   sharp 0.971
+  MGs_s2     flicker   44.0   kept-rate 0.910   sharp 0.971
+  MGs_s3     flicker   44.2   kept-rate 0.916   sharp 0.971
+  mf7        flicker   20.7   kept-rate 0.888   sharp 0.980
+  MGs seeds: flicker 44.0 +- 0.1   kept-rate 0.920 +- 0.011 | prot 0.947 +- 0.003
+DONE

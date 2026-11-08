@@ -1,0 +1,14 @@
+{
+ "IMG_1417_norain.MOV": {
+  "mean_abs_change_MG_255": 2.871387895747003,
+  "mean_abs_change_mf7_255": 2.4565306477333335,
+  "hf_ratio_MG": 0.8017012190753006,
+  "hf_ratio_mf7": 0.8233633879053718
+ },
+ "CCTV_norain 1.mp4": {
+  "mean_abs_change_MG_255": 0.6489873175517211,
+  "mean_abs_change_mf7_255": 0.40900987684257084,
+  "hf_ratio_MG": 0.9987692330414929,
+  "hf_ratio_mf7": 0.9995869966338381
+ }
+}

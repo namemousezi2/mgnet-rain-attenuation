@@ -1,0 +1,36 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\xcam_eval2.py:9: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+models: ['MG_both_orig', 'MGs_both', 'MG_cctv_only', 'MG_iphone_only']
+done iphone front_road
+done iphone back_road
+done iphone house
+done iphone p4_1931
+done iphone p4_1933
+done iphone p4_1934
+done iphone iphone_light2
+done cctv cctv_heavy
+done cctv cctv_medium
+done cctv cctv_rain
+
+=== test on IPHONE clips (MG_cctv_only has NEVER seen an iPhone frame) ===
+   method           front_roa  back_road      house    p4_1931    p4_1933    p4_1934  iphone_li     MEAN
+   median9               56.6       62.2       38.8       35.7       47.8       45.2       46.4     47.5
+   MG_both_orig          47.8       35.1       24.4       24.7       41.4       31.9       28.9     33.5
+   MGs_both              56.2       46.7       38.2       27.9       46.8       42.3       45.0     43.3
+   MG_cctv_only          55.8       46.1       36.9       27.9       46.6       42.2       44.8     42.9
+   MG_iphone_only        56.2       47.6       38.2       27.9       46.8       42.3       45.0     43.4
+   sharpness:       median9 0.971  MG_both_orig 0.977  MGs_both 0.974  MG_cctv_only 0.973  MG_iphone_only 0.973
+
+=== test on CCTV clips (MG_iphone_only has NEVER seen a CCTV frame) ===
+   method           cctv_heav  cctv_medi  cctv_rain     MEAN
+   median9               18.4       43.5       31.0     31.0
+   MG_both_orig          11.8       39.2       15.1     22.0
+   MGs_both              17.5       42.1       18.8     26.1
+   MG_cctv_only          17.0       41.7       18.5     25.8
+   MG_iphone_only        17.5       42.1       18.8     26.1
+   sharpness:       median9 0.992  MG_both_orig 0.994  MGs_both 0.993  MG_cctv_only 0.993  MG_iphone_only 0.993
+
+=== cross-camera gap (flicker removed %, vs the model trained on both) ===
+  iphone   both-camera(MGs_both) 43.3   held-out-camera 42.9   gap -0.4   other-single-camera 43.4   (median9 47.5)
+  cctv     both-camera(MGs_both) 26.1   held-out-camera 26.1   gap -0.0   other-single-camera 25.8   (median9 31.0)
+DONE

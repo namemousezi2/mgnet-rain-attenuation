@@ -1,0 +1,28 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\motion_trigger.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf = MF().to(dev); mf.load_state_dict(torch.load(ck / "student_mf7.pth", map_location=dev)["model_state_dict"]); mf.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\motion_trigger.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+house     rain-clip trigger rate {'input': 0.033, 'med3': 0.0, 'med9': 0.0, 'med21': 0.078, 'MG': 0.0, 'MGs': 0.011, 'mf7': 0.0}
+house     dry-clip  trigger rate {'input': 0.0, 'med3': 0.0, 'med9': 0.0, 'med21': 0.0, 'MG': 0.0, 'MGs': 0.0, 'mf7': 0.0}
+p4_1931   rain-clip trigger rate {'input': 0.644, 'med3': 0.622, 'med9': 0.567, 'med21': 0.5, 'MG': 0.567, 'MGs': 0.567, 'mf7': 0.611}
+p4_1931   dry-clip  trigger rate {'input': 1.0, 'med3': 0.978, 'med9': 0.978, 'med21': 0.744, 'MG': 0.989, 'MGs': 0.978, 'mf7': 0.978}
+p4_1933   rain-clip trigger rate {'input': 0.6, 'med3': 0.267, 'med9': 0.1, 'med21': 0.0, 'MG': 0.478, 'MGs': 0.4, 'mf7': 0.544}
+p4_1933   dry-clip  trigger rate {'input': 0.3, 'med3': 0.289, 'med9': 0.078, 'med21': 0.0, 'MG': 0.211, 'MGs': 0.133, 'mf7': 0.267}
+p4_1934   rain-clip trigger rate {'input': 0.189, 'med3': 0.122, 'med9': 0.056, 'med21': 0.0, 'MG': 0.067, 'MGs': 0.056, 'mf7': 0.133}
+p4_1934   dry-clip  trigger rate {'input': 0.156, 'med3': 0.144, 'med9': 0.089, 'med21': 0.078, 'MG': 0.089, 'MGs': 0.089, 'mf7': 0.122}
+shop1        input triggers  80  kept {'input': 1.0, 'med3': 0.963, 'med9': 0.762, 'med21': 0.65, 'MG': 0.95, 'MGs': 0.95, 'mf7': 0.975}
+shop2        input triggers  49  kept {'input': 1.0, 'med3': 0.857, 'med9': 0.796, 'med21': 0.347, 'MG': 0.857, 'MGs': 0.796, 'mf7': 0.837}
+shop3        input triggers  68  kept {'input': 1.0, 'med3': 0.941, 'med9': 0.471, 'med21': 0.309, 'MG': 0.926, 'MGs': 0.912, 'mf7': 0.882}
+shop_before  input triggers  50  kept {'input': 1.0, 'med3': 0.7, 'med9': 0.16, 'med21': 0.0, 'MG': 0.98, 'MGs': 0.96, 'mf7': 0.88}
+shop_after   input triggers  68  kept {'input': 1.0, 'med3': 0.897, 'med9': 0.897, 'med21': 0.632, 'MG': 0.971, 'MGs': 0.971, 'mf7': 0.956}
+
+=== motion-trigger test (MOG2, default parameters) ===
+          rain-clip triggers     rain-free triggers   true triggers kept  
+  input   0.367                  0.364                1.000               
+  med3    0.253                  0.353                0.872               
+  med9    0.181                  0.286                0.617               
+  med21   0.144                  0.206                0.388               
+  MG      0.278                  0.322                0.937               
+  MGs     0.258                  0.300                0.918               
+  mf7     0.322                  0.342                0.906               
+DONE

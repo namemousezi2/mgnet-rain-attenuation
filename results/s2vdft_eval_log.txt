@@ -1,0 +1,31 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\s2vdft_eval.py:15: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\s2vdft_eval.py:21: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sv.load_state_dict(torch.load(str(S2 / "model_states" / "derainer_rho05.pt"), map_location=dev)); sv.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\s2vdft_eval.py:24: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  svf = DerainNet(n_features=32, n_resblocks=8).to(dev); svf.load_state_dict(torch.load(str(pft), map_location=dev)); svf.eval()
+done front_road n windows 20
+done back_road n windows 20
+done house n windows 20
+done p4_1931 n windows 20
+done p4_1933 n windows 20
+done p4_1934 n windows 20
+
+=== flicker removed % (raw, no dry correction) over 6 clips ===
+  med9     45.6  [ 42.7,  48.3]   sharp 0.970
+  MGs      43.9  [ 40.4,  47.2]   sharp 0.971
+  S2VD     21.8  [ 17.6,  25.9]   sharp 0.838
+  S2VDft   33.2  [ 29.9,  36.4]   sharp 0.971
+shop1        {'med9': 0.628, 'MGs': 0.848, 'S2VD': 0.945, 'S2VDft': 0.796}
+shop2        {'med9': 0.857, 'MGs': 0.9, 'S2VD': 0.882, 'S2VDft': 0.863}
+shop3        {'med9': 0.847, 'MGs': 0.933, 'S2VD': 0.942, 'S2VDft': 0.847}
+shop_before  {'med9': 0.924, 'MGs': 0.982, 'S2VD': 0.972, 'S2VDft': 0.949}
+shop_after   {'med9': 0.833, 'MGs': 0.967, 'S2VD': 0.939, 'S2VDft': 0.9}
+
+=== the two axes of Table 9 ===
+          flicker%   kept-rate  kept+prot 
+  med9    45.6       0.818      0.919     
+  MGs     43.9       0.926      0.946     
+  S2VD    21.8       0.936      0.938     
+  S2VDft  33.2       0.871      0.935     
+DONE

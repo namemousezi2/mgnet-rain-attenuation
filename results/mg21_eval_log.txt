@@ -1,0 +1,27 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\mg21_eval.py:15: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+done front_road n windows 20
+done back_road n windows 20
+done house n windows 20
+done p4_1931 n windows 20
+done p4_1933 n windows 20
+done p4_1934 n windows 20
+
+=== flicker removed % (raw, no dry correction) over 6 clips ===
+  med9    45.9  [ 43.3,  48.4]   sharp 0.972
+  med21   58.3  [ 56.6,  59.9]   sharp 0.952
+  MGs     44.2  [ 41.4,  46.9]   sharp 0.973
+  MG21    56.3  [ 54.4,  58.3]   sharp 0.954
+shop1        {'med9': 0.65, 'med21': 0.644, 'MGs': 0.906, 'MG21': 0.734}
+shop2        {'med9': 0.786, 'med21': 0.711, 'MGs': 0.842, 'MG21': 0.734}
+shop3        {'med9': 0.778, 'med21': 0.803, 'MGs': 0.933, 'MG21': 0.836}
+shop_before  {'med9': 0.858, 'med21': 0.858, 'MGs': 0.943, 'MG21': 0.862}
+shop_after   {'med9': 0.817, 'med21': 0.817, 'MGs': 0.928, 'MG21': 0.825}
+
+=== the two axes of Table 9 ===
+         flicker%   kept-rate  kept+prot 
+  med9   45.9       0.778      0.913     
+  med21  58.3       0.766      0.891     
+  MGs    44.2       0.910      0.939     
+  MG21   56.3       0.798      0.903     
+DONE

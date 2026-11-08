@@ -1,0 +1,79 @@
+train samples 375 streak px frac 0.12743266203703701
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\student_net.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ck = torch.load(ROOT / "experiments_v2" / "checkpoints" / (name + ".pth"), map_location="cpu"); cf = ck["cfg"]; m = StudentX(cf[0], cf[1]) if len(cf) > 2 else Student(*cf); m.load_state_dict(ck["model_state_dict"]); return m, 2
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\cctv_mf7.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  base, _ = load_student("student_xb"); base = base.to(dev).eval(); m = MF().to(dev); m.load_state_dict(torch.load(ROOT / 'experiments_v2' / 'checkpoints' / 'student_mf6.pth', map_location=dev)['model_state_dict']); m.train(); opt = torch.optim.Adam(m.parameters(), 3e-4); rng = np.random.default_rng(1); t0 = time.time(); it = 0
+train 300 0.0194
+train 600 0.0099
+train 900 0.0111
+train 1200 0.0031
+train 1500 0.0086
+train 1800 0.0039
+train 2100 0.0051
+train 2400 0.0061
+train 2700 0.0087
+train 3000 0.0063
+train 3300 0.0139
+train 3600 0.0145
+train 3900 0.0072
+train 4200 0.0104
+train 4500 0.0032
+train 4800 0.0051
+train 5100 0.009
+train 5400 0.0089
+train 5700 0.0058
+train 6000 0.0059
+train 6300 0.0076
+train 6600 0.0056
+train 6900 0.0037
+train 7200 0.0046
+train 7500 0.0072
+train 7800 0.0046
+train 8100 0.0044
+train 8400 0.0044
+train 8700 0.005
+train 9000 0.0064
+train 9300 0.009
+train 9600 0.0084
+train 9900 0.0018
+train 10200 0.0197
+train 10500 0.0056
+train 10800 0.0017
+train 11100 0.0073
+train 11400 0.0097
+train 11700 0.0075
+train 12000 0.0075
+train 12300 0.0023
+train 12600 0.0088
+train 12900 0.0115
+train 13200 0.0145
+train 13500 0.0151
+train 13800 0.0037
+train 14100 0.0045
+train 14400 0.0112
+train 14700 0.0025
+train 15000 0.0039
+train 15300 0.0082
+train 15600 0.0022
+train 15900 0.0055
+train 16200 0.0059
+train 16500 0.0076
+train 16800 0.0129
+train 17100 0.0063
+train 17400 0.0049
+train 17700 0.0115
+train 18000 0.0038
+train 18300 0.0088
+train 18600 0.0064
+train 18900 0.0081
+train 19200 0.0109
+train 19500 0.012
+train 19800 0.0119
+trained 19862
+iphon_mid {'static_frac': 0.779, 'dens_xb': 0.79, 'bg_xb': 0.008, 'sh_xb': 0.895, 'g_xb': -0.434, 'dens_stA': 0.083, 'bg_stA': 0.003, 'sh_stA': 0.99, 'g_stA': 0.031, 'dens_A_target': 0.181, 'bg_A_target': 0.0, 'sh_A_target': 0.997, 'g_A_target': 0.019}
+iphon_heavy {'static_frac': 0.779, 'dens_xb': 0.758, 'bg_xb': 0.008, 'sh_xb': 0.866, 'g_xb': -0.175, 'dens_stA': 0.318, 'bg_stA': 0.003, 'sh_stA': 0.967, 'g_stA': 0.0, 'dens_A_target': 0.426, 'bg_A_target': 0.0, 'sh_A_target': 0.987, 'g_A_target': -0.007}
+cctv_heavy_rain_1-11_1 {'static_frac': 0.078, 'dens_xb': 0.987, 'bg_xb': 0.001, 'sh_xb': 0.995, 'g_xb': 0.001, 'dens_stA': 0.435, 'bg_stA': 0.001, 'sh_stA': 0.994, 'g_stA': 0.008, 'dens_A_target': 0.563, 'bg_A_target': 0.0, 'sh_A_target': 0.999, 'g_A_target': 0.002}
+cctv_medium_rain_1-11_ {'static_frac': 0.491, 'dens_xb': 0.871, 'bg_xb': 0.001, 'sh_xb': 0.979, 'g_xb': 0.012, 'dens_stA': 0.531, 'bg_stA': 0.001, 'sh_stA': 0.991, 'g_stA': 0.012, 'dens_A_target': 0.657, 'bg_A_target': 0.0, 'sh_A_target': 0.996, 'g_A_target': 0.003}
+cctv_rain_1-11_3.mp4 {'static_frac': 0.071, 'dens_xb': 0.998, 'bg_xb': 0.001, 'sh_xb': 0.989, 'g_xb': 0.018, 'dens_stA': 0.413, 'bg_stA': 0.001, 'sh_stA': 0.992, 'g_stA': 0.02, 'dens_A_target': 0.573, 'bg_A_target': 0.0, 'sh_A_target': 0.999, 'g_A_target': 0.015}
+iphone_light rain2 {'static_frac': 0.794, 'dens_xb': 0.504, 'bg_xb': 0.016, 'sh_xb': 0.674, 'g_xb': 0.384, 'dens_stA': 0.101, 'bg_stA': 0.001, 'sh_stA': 0.995, 'g_stA': 0.015, 'dens_A_target': 0.158, 'bg_A_target': 0.0, 'sh_A_target': 0.997, 'g_A_target': 0.01}
+DONE

@@ -1,0 +1,252 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_345.py:20: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MF().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_345.py:22: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(ROOT / "experiments_v2" / "checkpoints" / "prenet_ft_real.pth", map_location="cpu")["model_state_dict"])
+loaded prenet_ft
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:47: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(TP / "Restormer/Deraining/pretrained_models/deraining.pth", map_location="cpu")["params"])
+loaded restormer
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_345.py:42: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sv = DerainNet(n_features=32, n_resblocks=8).to(dev); sv.load_state_dict(torch.load(str(S2 / "model_states" / "derainer_rho05.pt"), map_location=dev)); sv.eval()
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\unified_345.py:45: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  asf = TOFlow().to(dev); _sd = torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev)
+
+================ TABLE 3: natural rain, iPhone ================
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+
+--- iPhone medium rain  flicker_in=0.0051  flicker_dry=0.0015  ratio=0.30
+   med3       raw   37.8 [  33.2,  42.0]   corrected   46.4   sharp 0.992
+   med5       raw   48.7 [  45.2,  51.9]   corrected   56.7   sharp 0.989
+   med9       raw   58.3 [  55.6,  60.7]   corrected   67.4   sharp 0.986
+   med15      raw   65.2 [  63.1,  67.0]   corrected   74.9   sharp 0.983
+   med21      raw   68.5 [  67.1,  69.9]   corrected   78.4   sharp 0.981
+   MG         raw   55.9 [  53.2,  58.5]   corrected   66.3   sharp 0.986
+   MGs_s1     raw   58.2 [  55.6,  60.8]   corrected   67.4   sharp 0.986
+   MGs_s2     raw   57.9 [  55.1,  60.6]   corrected   67.0   sharp 0.986
+   MGs_s3     raw   58.2 [  55.5,  60.6]   corrected   67.3   sharp 0.986
+   mf7        raw   39.0 [  34.9,  42.9]   corrected   53.2   sharp 0.990
+   mf6        raw   20.7 [  15.3,  26.1]   corrected   27.8   sharp 0.995
+   A4         raw   27.2 [  22.1,  32.0]   corrected   36.5   sharp 0.994
+   S2VD       raw   28.6 [  24.7,  32.6]   corrected   31.0   sharp 0.877
+   ASF        raw   21.7 [  16.3,  27.1]   corrected   30.5   sharp 0.995
+   PReNet     raw    3.4 [  -2.5,   9.2]   corrected    8.4   sharp 0.952
+   Restormer  raw    3.2 [  -3.3,   9.2]   corrected    4.1   sharp 0.965
+
+--- iPhone heavy rain  flicker_in=0.0078  flicker_dry=0.0015  ratio=0.20
+   med3       raw   38.0 [  33.9,  42.5]   corrected   43.1   sharp 0.981
+   med5       raw   49.3 [  46.0,  52.7]   corrected   54.2   sharp 0.971
+   med9       raw   59.3 [  56.8,  62.1]   corrected   64.9   sharp 0.960
+   med15      raw   66.2 [  64.2,  68.1]   corrected   72.1   sharp 0.949
+   med21      raw   69.8 [  68.2,  71.5]   corrected   75.9   sharp 0.942
+   MG         raw   57.3 [  54.7,  60.0]   corrected   63.7   sharp 0.961
+   MGs_s1     raw   59.2 [  56.6,  61.9]   corrected   64.7   sharp 0.960
+   MGs_s2     raw   59.0 [  56.6,  61.6]   corrected   64.6   sharp 0.960
+   MGs_s3     raw   59.2 [  56.5,  62.0]   corrected   64.8   sharp 0.960
+   mf7        raw   43.3 [  39.6,  46.7]   corrected   52.7   sharp 0.966
+   mf6        raw   23.9 [  18.6,  29.4]   corrected   28.8   sharp 0.981
+   A4         raw   29.4 [  24.7,  34.4]   corrected   35.4   sharp 0.977
+   S2VD       raw   27.5 [  22.4,  32.9]   corrected   28.7   sharp 0.869
+   ASF        raw   19.1 [  12.9,  25.6]   corrected   23.6   sharp 0.992
+   PReNet     raw    3.5 [  -3.7,  10.9]   corrected    6.5   sharp 0.939
+   Restormer  raw    4.8 [  -2.6,  12.1]   corrected    5.7   sharp 0.969
+
+TABLE 3 ROW (mean of medium and heavy, dry-corrected) | sharpness iPhone
+   med3       removed   44.7   sharp 0.987
+   med5       removed   55.4   sharp 0.980
+   med9       removed   66.2   sharp 0.973
+   med15      removed   73.5   sharp 0.966
+   med21      removed   77.2   sharp 0.961
+   MG         removed   65.0   sharp 0.974
+   MGs_s1     removed   66.0   sharp 0.973
+   MGs_s2     removed   65.8   sharp 0.973
+   MGs_s3     removed   66.0   sharp 0.973
+   mf7        removed   52.9   sharp 0.978
+   mf6        removed   28.3   sharp 0.988
+   A4         removed   35.9   sharp 0.985
+   S2VD       removed   29.8   sharp 0.873
+   ASF        removed   27.0   sharp 0.994
+   PReNet     removed    7.5   sharp 0.946
+   Restormer  removed    4.9   sharp 0.967
+
+Sharpness on the three held-out CCTV clips
+  done cctv_heavy_rain_1-11_1.mp4
+  done cctv_medium_rain_1-11_4.mp4
+  done cctv_rain_1-11_3.mp4
+   med3       sharp_CCTV 0.997
+   med5       sharp_CCTV 0.996
+   med9       sharp_CCTV 0.992
+   med15      sharp_CCTV 0.980
+   med21      sharp_CCTV 0.967
+   MG         sharp_CCTV 0.998
+   MGs_s1     sharp_CCTV 0.992
+   MGs_s2     sharp_CCTV 0.992
+   MGs_s3     sharp_CCTV 0.992
+   mf7        sharp_CCTV 0.999
+   mf6        sharp_CCTV 0.999
+   A4         sharp_CCTV 0.999
+   S2VD       sharp_CCTV 0.698
+   ASF        sharp_CCTV 0.999
+   PReNet     sharp_CCTV 0.809
+   Restormer  sharp_CCTV 0.933
+
+================ TABLE 4: H01 artificial rain ================
+
+--- H01 light  flicker_in=0.0035  flicker_dry=0.0004  ratio=0.10
+   med3       raw   55.1 [  38.0,  68.8]   corrected   59.0   sharp 0.996
+   med5       raw   65.7 [  52.5,  75.8]   corrected   69.7   sharp 0.993
+   med9       raw   73.2 [  64.4,  80.5]   corrected   76.7   sharp 0.989
+   med15      raw   77.9 [  71.0,  83.2]   corrected   81.1   sharp 0.987
+   med21      raw   80.2 [  74.4,  84.6]   corrected   83.4   sharp 0.984
+   MG         raw   65.7 [  57.6,  72.8]   corrected   72.3   sharp 0.992
+   MGs_s1     raw   73.1 [  64.5,  80.4]   corrected   76.5   sharp 0.989
+   MGs_s2     raw   73.1 [  64.3,  80.8]   corrected   76.6   sharp 0.989
+   MGs_s3     raw   73.1 [  64.1,  80.4]   corrected   76.6   sharp 0.989
+   mf7        raw   54.4 [  41.7,  65.2]   corrected   60.5   sharp 0.999
+   mf6        raw   44.6 [  28.2,  59.6]   corrected   49.5   sharp 1.000
+   A4         raw   51.1 [  36.3,  63.9]   corrected   56.7   sharp 0.999
+   S2VD       raw   36.6 [  12.9,  56.7]   corrected   37.7   sharp 0.819
+   ASF        raw   40.5 [  24.2,  55.9]   corrected   45.3   sharp 0.999
+   PReNet     raw   22.8 [   7.9,  36.2]   corrected   40.3   sharp 0.838
+   Restormer  raw    8.6 [ -27.5,  39.6]   corrected    9.0   sharp 0.927
+
+--- H01 medium  flicker_in=0.0077  flicker_dry=0.0004  ratio=0.05
+   med3       raw   71.4 [  62.8,  79.0]   corrected   73.9   sharp 1.000
+   med5       raw   80.9 [  76.2,  85.5]   corrected   83.4   sharp 0.993
+   med9       raw   85.2 [  82.1,  88.6]   corrected   87.3   sharp 0.988
+   med15      raw   87.2 [  84.7,  89.9]   corrected   89.0   sharp 0.984
+   med21      raw   88.1 [  85.5,  90.5]   corrected   89.8   sharp 0.980
+   MG         raw   74.4 [  67.0,  80.8]   corrected   77.6   sharp 0.990
+   MGs_s1     raw   79.2 [  72.8,  85.4]   corrected   81.0   sharp 0.988
+   MGs_s2     raw   76.9 [  69.3,  83.7]   corrected   78.6   sharp 0.988
+   MGs_s3     raw   79.3 [  72.5,  85.3]   corrected   81.1   sharp 0.988
+   mf7        raw   63.7 [  53.4,  73.8]   corrected   66.8   sharp 0.999
+   mf6        raw   61.9 [  52.0,  71.8]   corrected   64.9   sharp 1.000
+   A4         raw   56.7 [  43.8,  68.0]   corrected   59.4   sharp 0.999
+   S2VD       raw   28.0 [   4.4,  50.1]   corrected   28.0   sharp 0.854
+   ASF        raw   64.1 [  55.1,  72.4]   corrected   67.3   sharp 1.000
+   PReNet     raw   50.8 [  40.5,  61.4]   corrected   59.6   sharp 0.892
+   Restormer  raw    3.1 [ -26.7,  33.9]   corrected    3.0   sharp 0.955
+
+--- H01 medium_heavy  flicker_in=0.0138  flicker_dry=0.0004  ratio=0.03
+   med3       raw   46.8 [  34.2,  59.6]   corrected   47.5   sharp 0.994
+   med5       raw   60.1 [  51.0,  68.8]   corrected   60.9   sharp 0.986
+   med9       raw   70.4 [  63.9,  76.7]   corrected   71.2   sharp 0.978
+   med15      raw   76.6 [  71.6,  81.2]   corrected   77.3   sharp 0.974
+   med21      raw   79.6 [  74.9,  84.1]   corrected   80.4   sharp 0.972
+   MG         raw   66.7 [  58.6,  74.0]   corrected   68.3   sharp 0.980
+   MGs_s1     raw   67.9 [  60.1,  75.4]   corrected   68.5   sharp 0.978
+   MGs_s2     raw   67.4 [  59.6,  75.2]   corrected   68.1   sharp 0.978
+   MGs_s3     raw   67.8 [  59.3,  75.1]   corrected   68.5   sharp 0.978
+   mf7        raw   60.3 [  51.5,  68.0]   corrected   61.8   sharp 0.995
+   mf6        raw   49.0 [  38.8,  59.2]   corrected   50.3   sharp 1.000
+   A4         raw   53.3 [  42.4,  63.3]   corrected   54.7   sharp 0.998
+   S2VD       raw   33.1 [  12.1,  51.7]   corrected   33.3   sharp 0.820
+   ASF        raw   45.4 [  32.1,  56.7]   corrected   46.6   sharp 0.997
+   PReNet     raw   43.3 [  30.5,  55.1]   corrected   48.0   sharp 0.819
+   Restormer  raw    6.4 [ -20.5,  29.2]   corrected    6.4   sharp 0.951
+
+--- H01 heavy  flicker_in=0.0327  flicker_dry=0.0004  ratio=0.01
+   med3       raw   40.3 [  31.3,  49.9]   corrected   40.6   sharp 0.983
+   med5       raw   54.4 [  47.9,  61.4]   corrected   54.6   sharp 0.974
+   med9       raw   66.4 [  61.7,  71.4]   corrected   66.7   sharp 0.967
+   med15      raw   74.3 [  71.0,  78.1]   corrected   74.6   sharp 0.963
+   med21      raw   78.4 [  75.6,  81.4]   corrected   78.7   sharp 0.961
+   MG         raw   66.2 [  61.5,  71.2]   corrected   66.8   sharp 0.970
+   MGs_s1     raw   66.4 [  61.5,  71.2]   corrected   66.6   sharp 0.967
+   MGs_s2     raw   66.3 [  61.3,  71.7]   corrected   66.5   sharp 0.967
+   MGs_s3     raw   66.4 [  61.8,  71.3]   corrected   66.6   sharp 0.967
+   mf7        raw   64.5 [  59.4,  69.6]   corrected   65.2   sharp 0.996
+   mf6        raw   58.8 [  53.7,  64.4]   corrected   59.4   sharp 1.000
+   A4         raw   62.1 [  56.8,  67.4]   corrected   62.7   sharp 0.998
+   S2VD       raw   24.4 [  10.5,  39.3]   corrected   24.4   sharp 0.813
+   ASF        raw   32.6 [  24.9,  41.7]   corrected   32.9   sharp 0.996
+   PReNet     raw   38.1 [  30.4,  46.3]   corrected   40.0   sharp 0.737
+   Restormer  raw    6.0 [  -9.7,  21.9]   corrected    6.0   sharp 0.946
+
+================ TABLE 5: J01 field scene (hose rain) ================
+
+--- Jungle Light  flicker_in=0.0025  flicker_dry=0.0005  ratio=0.19
+   med3       raw   43.2 [  27.3,  57.2]   corrected   48.1   sharp 0.988
+   med5       raw   56.1 [  43.8,  66.8]   corrected   61.0   sharp 0.980
+   med9       raw   66.5 [  58.8,  73.8]   corrected   71.9   sharp 0.970
+   med15      raw   72.7 [  67.1,  78.1]   corrected   78.1   sharp 0.960
+   med21      raw   75.8 [  71.4,  80.1]   corrected   81.5   sharp 0.952
+   MG         raw   50.7 [  39.2,  62.0]   corrected   60.6   sharp 0.989
+   MGs_s1     raw   65.2 [  56.4,  73.1]   corrected   70.3   sharp 0.970
+   MGs_s2     raw   65.1 [  56.2,  72.9]   corrected   70.2   sharp 0.970
+   MGs_s3     raw   65.6 [  57.3,  73.4]   corrected   70.8   sharp 0.970
+   mf7        raw   41.0 [  26.2,  55.5]   corrected   50.8   sharp 1.000
+   mf6        raw   35.0 [  19.0,  50.4]   corrected   43.3   sharp 1.000
+   A4         raw   36.8 [  19.6,  52.4]   corrected   45.6   sharp 1.000
+   S2VD       raw   32.8 [  13.5,  50.9]   corrected   34.7   sharp 0.768
+   ASF        raw   29.4 [  12.8,  46.1]   corrected   36.8   sharp 1.000
+   PReNet     raw   17.0 [  -5.2,  36.4]   corrected   25.5   sharp 0.937
+   Restormer  raw   13.0 [ -10.8,  35.3]   corrected   14.9   sharp 0.867
+
+--- Jungle Medium  flicker_in=0.0025  flicker_dry=0.0005  ratio=0.20
+   med3       raw   50.3 [  41.7,  58.9]   corrected   57.1   sharp 0.990
+   med5       raw   62.1 [  55.9,  68.4]   corrected   68.7   sharp 0.983
+   med9       raw   69.9 [  65.2,  74.1]   corrected   76.3   sharp 0.973
+   med15      raw   74.5 [  70.9,  77.9]   corrected   80.5   sharp 0.962
+   med21      raw   77.2 [  74.0,  80.0]   corrected   83.5   sharp 0.952
+   MG         raw   49.7 [  40.3,  58.2]   corrected   59.7   sharp 0.989
+   MGs_s1     raw   68.6 [  63.6,  73.4]   corrected   74.8   sharp 0.972
+   MGs_s2     raw   66.7 [  60.6,  72.4]   corrected   72.4   sharp 0.972
+   MGs_s3     raw   68.1 [  62.4,  73.1]   corrected   74.1   sharp 0.972
+   mf7        raw   37.3 [  25.4,  49.5]   corrected   46.5   sharp 1.000
+   mf6        raw   36.5 [  24.8,  48.0]   corrected   45.5   sharp 1.000
+   A4         raw   34.2 [  20.3,  47.1]   corrected   42.7   sharp 1.000
+   S2VD       raw   36.0 [  24.3,  48.5]   corrected   38.8   sharp 0.774
+   ASF        raw   34.2 [  23.1,  45.5]   corrected   43.0   sharp 1.000
+   PReNet     raw   17.5 [   3.0,  32.7]   corrected   26.4   sharp 0.919
+   Restormer  raw    9.7 [  -9.8,  29.5]   corrected   10.9   sharp 0.883
+
+--- Jungle Heavy  flicker_in=0.0021  flicker_dry=0.0005  ratio=0.23
+   med3       raw   63.1 [  55.7,  70.1]   corrected   75.0   sharp 0.995
+   med5       raw   70.4 [  65.1,  75.5]   corrected   80.7   sharp 0.992
+   med9       raw   75.6 [  71.8,  79.2]   corrected   85.0   sharp 0.988
+   med15      raw   78.9 [  76.0,  81.6]   corrected   87.2   sharp 0.982
+   med21      raw   80.4 [  78.1,  82.4]   corrected   88.8   sharp 0.977
+   MG         raw   22.8 [ -50.4,  63.7]   corrected   26.9   sharp 0.994
+   MGs_s1     raw   43.4 [ -22.5,  77.7]   corrected   43.3   sharp 0.988
+   MGs_s2     raw   41.4 [ -26.4,  77.2]   corrected   40.7   sharp 0.988
+   MGs_s3     raw   43.1 [ -22.7,  78.3]   corrected   43.0   sharp 0.988
+   mf7        raw   11.7 [ -64.3,  56.3]   corrected   15.2   sharp 1.000
+   mf6        raw   14.2 [ -54.5,  55.3]   corrected   18.3   sharp 1.000
+   A4         raw   10.6 [ -64.6,  54.5]   corrected   13.7   sharp 1.000
+   S2VD       raw   47.1 [  22.4,  65.3]   corrected   53.6   sharp 0.779
+   ASF        raw   36.3 [  10.0,  54.8]   corrected   47.4   sharp 1.000
+   PReNet     raw    1.5 [ -68.6,  43.5]   corrected    7.4   sharp 0.899
+   Restormer  raw    4.6 [ -71.5,  50.0]   corrected    4.5   sharp 0.886
+
+--- ROAD RAIN  flicker_in=0.0115  flicker_dry=0.0006  ratio=0.05
+   med3       raw   25.4 [ -86.5,  85.8]   corrected   25.9   sharp 0.990
+   med5       raw   32.4 [ -71.3,  88.6]   corrected   32.6   sharp 0.990
+   med9       raw   39.7 [ -56.4,  90.6]   corrected   39.9   sharp 0.987
+   med15      raw   49.1 [ -32.0,  92.3]   corrected   49.4   sharp 1.007
+   med21      raw   60.1 [   0.4,  92.9]   corrected   61.1   sharp 1.199
+   MG         raw   20.4 [-107.2,  88.6]   corrected   20.8   sharp 0.993
+   MGs_s1     raw   23.2 [-106.5,  90.6]   corrected   22.5   sharp 0.987
+   MGs_s2     raw   23.0 [-106.8,  90.7]   corrected   22.3   sharp 0.987
+   MGs_s3     raw   23.0 [-104.4,  90.9]   corrected   22.3   sharp 0.987
+   mf7        raw   16.6 [-112.7,  85.1]   corrected   17.6   sharp 1.000
+   mf6        raw   15.7 [-108.2,  84.0]   corrected   16.6   sharp 1.000
+   A4         raw   13.8 [-118.1,  83.8]   corrected   14.5   sharp 1.009
+   S2VD       raw   14.1 [-111.7,  82.3]   corrected   14.2   sharp 0.836
+   ASF        raw   28.1 [ -61.0,  83.3]   corrected   29.7   sharp 1.031
+   PReNet     raw    1.9 [-135.6,  75.5]   corrected    3.4   sharp 0.918
+   Restormer  raw    3.6 [-125.0,  77.0]   corrected    3.8   sharp 0.893
+
+DONE

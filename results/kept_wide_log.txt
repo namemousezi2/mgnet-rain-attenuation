@@ -1,0 +1,28 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\kept_wide.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(p, map_location=dev)["model_state_dict"]); return m.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\kept_wide.py:21: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf = MF().to(dev); mf.load_state_dict(torch.load(ck / "student_mf7.pth", map_location=dev)["model_state_dict"]); mf.eval()
+shop1          n_frames_used 30  input_dets   92   {'med3': 0.805, 'med5': 0.762, 'med9': 0.65, 'med15': 0.617, 'med21': 0.644, 'MG': 0.921, 'MGs_s1': 0.906, 'MGs_s2': 0.869, 'MGs_s3': 0.867, 'mf7': 0.823}
+shop2          n_frames_used 30  input_dets   90   {'med3': 0.788, 'med5': 0.749, 'med9': 0.786, 'med15': 0.736, 'med21': 0.711, 'MG': 0.875, 'MGs_s1': 0.842, 'MGs_s2': 0.836, 'MGs_s3': 0.822, 'mf7': 0.836}
+shop3          n_frames_used 30  input_dets   65   {'med3': 0.85, 'med5': 0.8, 'med9': 0.778, 'med15': 0.794, 'med21': 0.803, 'MG': 0.975, 'MGs_s1': 0.933, 'MGs_s2': 0.95, 'MGs_s3': 0.9, 'mf7': 0.858}
+shop_before    n_frames_used 30  input_dets   83   {'med3': 0.883, 'med5': 0.893, 'med9': 0.858, 'med15': 0.858, 'med21': 0.858, 'MG': 0.96, 'MGs_s1': 0.943, 'MGs_s2': 0.916, 'MGs_s3': 0.939, 'mf7': 0.922}
+shop_after     n_frames_used 30  input_dets   82   {'med3': 0.825, 'med5': 0.817, 'med9': 0.817, 'med15': 0.817, 'med21': 0.817, 'MG': 0.944, 'MGs_s1': 0.928, 'MGs_s2': 0.889, 'MGs_s3': 0.886, 'mf7': 0.872}
+skip street_heavy input detections 0
+skip street_medium input detections 0
+street_rain    n_frames_used  5  input_dets    5   {'med3': 0.8, 'med5': 0.4, 'med9': 0.4, 'med15': 0.0, 'med21': 0.0, 'MG': 0.8, 'MGs_s1': 0.8, 'MGs_s2': 0.8, 'MGs_s3': 0.6, 'mf7': 0.8}
+skip front_road input detections 0
+back_road      n_frames_used 30  input_dets   42   {'med3': 0.972, 'med5': 0.989, 'med9': 0.989, 'med15': 0.972, 'med21': 0.989, 'MG': 0.989, 'MGs_s1': 0.972, 'MGs_s2': 0.972, 'MGs_s3': 0.989, 'mf7': 0.989}
+
+=== kept-rate over 7 scenes (bare | with protection) ===
+  med3     0.846 | 0.948
+  med5     0.773 | 0.949
+  med9     0.754 | 0.936
+  med15    0.685 | 0.926
+  med21    0.689 | 0.920
+  MG       0.923 | 0.965
+  MGs_s1   0.903 | 0.953
+  MGs_s2   0.890 | 0.946
+  MGs_s3   0.857 | 0.949
+  mf7      0.872 | 0.943
+  MGs seeds: 0.884 +- 0.019 | 0.949 +- 0.003
+DONE

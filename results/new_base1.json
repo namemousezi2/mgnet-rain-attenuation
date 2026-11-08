@@ -1,0 +1,27 @@
+{
+ "dry_flicker_in": 0.0005741378517996054,
+ "IMG_1772": {
+  "removed_PReNet": 0.4270976251607239,
+  "sharp_nonrain_PReNet": 0.8383859770006036,
+  "removed_Restormer": 0.07838294483134567,
+  "sharp_nonrain_Restormer": 0.9210591479022368
+ },
+ "IMG_1773": {
+  "removed_PReNet": 0.5953363592404317,
+  "sharp_nonrain_PReNet": 0.8868174649726072,
+  "removed_Restormer": 0.017897627266143634,
+  "sharp_nonrain_Restormer": 0.9512114829331796
+ },
+ "IMG_1771": {
+  "removed_PReNet": 0.4793662320199892,
+  "sharp_nonrain_PReNet": 0.8099464425608369,
+  "removed_Restormer": 0.07002750255673629,
+  "sharp_nonrain_Restormer": 0.9406982515219966
+ },
+ "IMG_1769": {
+  "removed_PReNet": 0.36640258722529695,
+  "sharp_nonrain_PReNet": 0.722847323237485,
+  "removed_Restormer": 0.0582900485654585,
+  "sharp_nonrain_Restormer": 0.9493314231996797
+ }
+}

@@ -1,0 +1,12 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\res_speed.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m = MG().to(dev); m.load_state_dict(torch.load(ck / "student_mg.pth", map_location=dev)["model_state_dict"]); m.eval()
+640x360 {'pipeline_fp32': 116.2, 'network_fp32': 241.0, 'pipeline_amp': 125.1}
+1280x720 (720p) {'pipeline_fp32': 29.2, 'network_fp32': 58.2, 'pipeline_amp': 32.1}
+1920x1080 (1080p) {'pipeline_fp32': 12.9, 'network_fp32': 25.8, 'pipeline_amp': 14.4}
+
+=== MG-Net throughput by resolution (fps) ===
+  resolution           pipeline fp32    pipeline amp     network only    
+  640x360              116.2            125.1            241.0           
+  1280x720 (720p)      29.2             32.1             58.2            
+  1920x1080 (1080p)    12.9             14.4             25.8            
+DONE

@@ -1,0 +1,60 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\train_asf_ft.py:21: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sd_ = torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev)
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+ASF params K 3087.459 | frozen tensors 40 | trainable K 2127.259
+train crops 750 streak px frac 0.3033775
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+first iteration OK, out shape (2, 3, 160, 160)
+train 200 0.0274 elapsed_min 0.6
+train 400 0.0617 elapsed_min 1.1
+train 600 0.0259 elapsed_min 1.7
+train 800 0.0046 elapsed_min 2.3
+train 1000 0.0203 elapsed_min 2.8
+train 1200 0.024 elapsed_min 3.4
+train 1400 0.0806 elapsed_min 3.9
+train 1600 0.0938 elapsed_min 4.5
+train 1800 0.1145 elapsed_min 5.1
+train 2000 0.0401 elapsed_min 5.6
+train 2200 0.0758 elapsed_min 6.2
+train 2400 0.0788 elapsed_min 6.7
+train 2600 0.0202 elapsed_min 7.3
+train 2800 0.0614 elapsed_min 7.9
+train 3000 0.0729 elapsed_min 8.4
+train 3200 0.0301 elapsed_min 9.0
+train 3400 0.0244 elapsed_min 9.5
+train 3600 0.0091 elapsed_min 10.1
+train 3800 0.0242 elapsed_min 10.7
+train 4000 0.0089 elapsed_min 11.2
+train 4200 0.0773 elapsed_min 11.8
+train 4400 0.0045 elapsed_min 12.3
+train 4600 0.0394 elapsed_min 12.9
+train 4800 0.0248 elapsed_min 13.5
+train 5000 0.0102 elapsed_min 14.0
+train 5200 0.0235 elapsed_min 14.6
+train 5400 0.0197 elapsed_min 15.1
+train 5600 0.0551 elapsed_min 15.7
+train 5800 0.0188 elapsed_min 16.3
+train 6000 0.0122 elapsed_min 16.8
+train 6200 0.0101 elapsed_min 17.4
+train 6400 0.0267 elapsed_min 18.0
+train 6600 0.0385 elapsed_min 18.5
+train 6800 0.0673 elapsed_min 19.1
+train 7000 0.0225 elapsed_min 19.6
+train 7200 0.0516 elapsed_min 20.2
+train 7400 0.104 elapsed_min 20.8
+train 7600 0.0247 elapsed_min 21.3
+train 7800 0.0114 elapsed_min 21.9
+train 8000 0.0235 elapsed_min 22.4
+train 8200 0.0406 elapsed_min 23.0
+train 8400 0.0548 elapsed_min 23.6
+trained iterations 8559
+DONE

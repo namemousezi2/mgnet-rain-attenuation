@@ -1,0 +1,19 @@
+{
+ "dry_flicker_in": 0.0005741378517996054,
+ "IMG_1772": {
+  "removed_ASF-Net": 0.46412297845360884,
+  "sharp_nonrain_ASF-Net": 0.999453174132461
+ },
+ "IMG_1773": {
+  "removed_ASF-Net": 0.670970737483497,
+  "sharp_nonrain_ASF-Net": 0.9995959133256874
+ },
+ "IMG_1771": {
+  "removed_ASF-Net": 0.4685357494132987,
+  "sharp_nonrain_ASF-Net": 0.9976781637653098
+ },
+ "IMG_1769": {
+  "removed_ASF-Net": 0.3373276422397139,
+  "sharp_nonrain_ASF-Net": 0.9920655824824903
+ }
+}

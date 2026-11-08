@@ -1,0 +1,109 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_clips3_eval.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf = MF().to(dev); mf.load_state_dict(torch.load(ck / "student_mf7.pth", map_location=dev)["model_state_dict"]); mf.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_clips3_eval.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mf6 = MF().to(dev); mf6.load_state_dict(torch.load(ck / "student_mf6.pth", map_location=dev)["model_state_dict"]); mf6.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_clips3_eval.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mg = MG().to(dev); mg.load_state_dict(torch.load(ck / "student_mg.pth", map_location=dev)["model_state_dict"]); mg.eval()
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(ROOT / "experiments_v2" / "checkpoints" / "prenet_ft_real.pth", map_location="cpu")["model_state_dict"])
+loaded prenet_ft
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\baselines_v2.py:47: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(TP / "Restormer/Deraining/pretrained_models/deraining.pth", map_location="cpu")["params"])
+loaded restormer
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_clips3_eval.py:46: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sv = DerainNet(n_features=32, n_resblocks=8).to(dev); sv.load_state_dict(torch.load(str(S2 / "model_states" / "derainer_rho05.pt"), map_location=dev)); sv.eval()
+GPU ID: 0
+test......
+Toflow based on Deformable Conv !!! 
+
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\asf_src\spynet\SpyFlow.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(SpyNet_model_dir + '/network-' + arguments_strModel + '.pytorch'), strict=False)
+params of FeaEncode:  0.36352
+params of Alignment:  1.490976
+params of Reconstruction:  1.122307
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_clips3_eval.py:49: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  asf = TOFlow().to(dev); sd = torch.load(str(SRC / "toflow_models_mine" / "denoising_best.pkl"), map_location=dev); asf.load_state_dict({k.replace("module.", "", 1): v for k, v in sd.items()}, strict=False); asf.eval(); os.chdir(cwd)
+dry_IMG_1869 frames 1837 fps 30.0 sec 61.2 stable 8
+C:\Users\YugiO\AppData\Roaming\Python\Python311\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+dry_IMG_1869 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9333, 'MG': 0.6689, 'sh_mf7': 0.9423, 'mf7': 0.7792, 'sh_mf6': 0.9608, 'mf6': 0.873, 'sh_A4': 0.9563, 'A4': 0.8574, 'sh_full_m9': 0.9311, 'full_m9': 0.6225, 'sh_S2VD': 0.821, 'S2VD': 0.8171, 'sh_PReNet': 0.9015, 'PReNet': 1.0332, 'sh_Restormer': 0.9232, 'Restormer': 0.9687, 'sh_ASF': 0.9995, 'ASF': 0.9994, 'flicker_in': 0.0028}
+dry_IMG_1872 frames 1787 fps 30.0 sec 59.6 stable 8
+dry_IMG_1872 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9903, 'MG': 0.7504, 'sh_mf7': 0.997, 'mf7': 1.007, 'sh_mf6': 0.9987, 'mf6': 1.0426, 'sh_A4': 0.9979, 'A4': 1.0194, 'sh_full_m9': 0.9894, 'full_m9': 0.665, 'sh_S2VD': 0.6918, 'S2VD': 0.6976, 'sh_PReNet': 0.9615, 'PReNet': 1.2571, 'sh_Restormer': 0.863, 'Restormer': 0.9638, 'sh_ASF': 0.999, 'ASF': 1.0107, 'flicker_in': 0.0011}
+dry_IMG_1873 frames 1818 fps 30.0 sec 60.6 stable 8
+dry_IMG_1873 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9736, 'MG': 0.7012, 'sh_mf7': 0.9807, 'mf7': 0.8884, 'sh_mf6': 0.9921, 'mf6': 0.9947, 'sh_A4': 0.9855, 'A4': 0.9491, 'sh_full_m9': 0.9704, 'full_m9': 0.6037, 'sh_S2VD': 0.8274, 'S2VD': 0.7483, 'sh_PReNet': 0.936, 'PReNet': 1.1094, 'sh_Restormer': 0.9019, 'Restormer': 0.9231, 'sh_ASF': 0.9998, 'ASF': 1.0048, 'flicker_in': 0.0016}
+rain_IMG_1931 frames 1962 fps 30.0 sec 65.4 stable 8
+rain_IMG_1931 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9746, 'MG': 0.8111, 'sh_mf7': 0.9796, 'mf7': 0.8989, 'sh_mf6': 0.9861, 'mf6': 0.9516, 'sh_A4': 0.9851, 'A4': 0.9361, 'sh_full_m9': 0.9738, 'full_m9': 0.7826, 'sh_S2VD': 0.8699, 'S2VD': 0.8778, 'sh_PReNet': 0.9966, 'PReNet': 1.0849, 'sh_Restormer': 0.9529, 'Restormer': 0.9764, 'sh_ASF': 0.9972, 'ASF': 0.9708, 'flicker_in': 0.0037}
+rain_IMG_1933 frames 1467 fps 30.0 sec 48.9 stable 8
+rain_IMG_1933 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9758, 'MG': 0.5053, 'sh_mf7': 0.9808, 'mf7': 0.6838, 'sh_mf6': 0.986, 'mf6': 0.7886, 'sh_A4': 0.9829, 'A4': 0.7268, 'sh_full_m9': 0.9747, 'full_m9': 0.4468, 'sh_S2VD': 0.7977, 'S2VD': 0.726, 'sh_PReNet': 0.9604, 'PReNet': 1.0689, 'sh_Restormer': 0.9021, 'Restormer': 0.9438, 'sh_ASF': 0.9903, 'ASF': 0.8284, 'flicker_in': 0.0024}
+rain_IMG_1934 frames 1823 fps 30.0 sec 60.8 stable 8
+rain_IMG_1934 {'sh_in': 1.0, 'in': 1.0, 'sh_MG': 0.9823, 'MG': 0.6961, 'sh_mf7': 0.987, 'mf7': 0.8408, 'sh_mf6': 0.9934, 'mf6': 0.9155, 'sh_A4': 0.9903, 'A4': 0.8853, 'sh_full_m9': 0.979, 'full_m9': 0.5992, 'sh_S2VD': 0.8461, 'S2VD': 0.795, 'sh_PReNet': 0.9404, 'PReNet': 1.1225, 'sh_Restormer': 0.9122, 'Restormer': 0.9527, 'sh_ASF': 0.9981, 'ASF': 0.9639, 'flicker_in': 0.0016}
+
+background distance (rain vs dry), lower = same scene
+  rain_IMG_1931 {'dry_IMG_1869': 0.242, 'dry_IMG_1872': 0.297, 'dry_IMG_1873': 0.28}
+  rain_IMG_1933 {'dry_IMG_1869': 0.324, 'dry_IMG_1872': 0.199, 'dry_IMG_1873': 0.303}
+  rain_IMG_1934 {'dry_IMG_1869': 0.232, 'dry_IMG_1872': 0.336, 'dry_IMG_1873': 0.15}
+
+RAW removed % / sharpness
+rain_IMG_1931 flicker_in=0.0037
+   MG         removed  18.9  sharp 0.975
+   mf7        removed  10.1  sharp 0.980
+   mf6        removed   4.8  sharp 0.986
+   A4         removed   6.4  sharp 0.985
+   full_m9    removed  21.7  sharp 0.974
+   S2VD       removed  12.2  sharp 0.870
+   PReNet     removed  -8.5  sharp 0.997
+   Restormer  removed   2.4  sharp 0.953
+   ASF        removed   2.9  sharp 0.997
+rain_IMG_1933 flicker_in=0.0024
+   MG         removed  49.5  sharp 0.976
+   mf7        removed  31.6  sharp 0.981
+   mf6        removed  21.1  sharp 0.986
+   A4         removed  27.3  sharp 0.983
+   full_m9    removed  55.3  sharp 0.975
+   S2VD       removed  27.4  sharp 0.798
+   PReNet     removed  -6.9  sharp 0.960
+   Restormer  removed   5.6  sharp 0.902
+   ASF        removed  17.2  sharp 0.990
+rain_IMG_1934 flicker_in=0.0016
+   MG         removed  30.4  sharp 0.982
+   mf7        removed  15.9  sharp 0.987
+   mf6        removed   8.5  sharp 0.993
+   A4         removed  11.5  sharp 0.990
+   full_m9    removed  40.1  sharp 0.979
+   S2VD       removed  20.5  sharp 0.846
+   PReNet     removed -12.3  sharp 0.940
+   Restormer  removed   4.7  sharp 0.912
+   ASF        removed   3.6  sharp 0.998
+
+DRY-CORRECTED removed % (dry = nearest-background dry clip)
+rain_IMG_1931 dry = dry_IMG_1869 f_dry/f_rain=0.75
+   MG         -24.3
+   mf7        -26.2
+   mf6        -19.0
+   A4         -17.5
+   full_m9    -26.9
+   S2VD        -6.2
+   PReNet     -24.2
+   Restormer    0.0
+   ASF         11.6
+rain_IMG_1933 dry = dry_IMG_1872 f_dry/f_rain=0.47
+   MG          71.5
+   mf7         60.7
+   mf6         44.0
+   A4          53.6
+   full_m9     74.9
+   S2VD        24.8
+   PReNet      10.0
+   Restormer    7.4
+   ASF         33.6
+rain_IMG_1934 dry = dry_IMG_1873 f_dry/f_rain=0.99
+   MG          72.2
+   mf7        402.2
+   mf6        650.6
+   A4         528.9
+   full_m9     76.3
+   S2VD       -358.0
+   PReNet     -119.0
+   Restormer  -234.8
+   ASF        335.0
+DONE

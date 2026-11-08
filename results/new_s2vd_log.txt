@@ -1,0 +1,12 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\new_s2vd.py:6: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sv = DerainNet(n_features=32, n_resblocks=8).to(dev); sv.load_state_dict(torch.load(str(Path(__file__).parent / "s2vd_src" / "model_states" / "derainer_rho05.pt"), map_location=dev)); sv.eval()
+DRY {'in': 0.0005741378517996054, 'S2VD': 0.0003535121795721352}
+IMG_1772 {'removed_S2VD': 0.366, 'sharp_nonrain_S2VD': 0.822}
+IMG_1773 {'removed_S2VD': 0.257, 'sharp_nonrain_S2VD': 0.852}
+IMG_1771 {'removed_S2VD': 0.338, 'sharp_nonrain_S2VD': 0.809}
+IMG_1769 {'removed_S2VD': 0.244, 'sharp_nonrain_S2VD': 0.808}
+EVALDONE
+video heavy
+video medium
+video light
+DONE

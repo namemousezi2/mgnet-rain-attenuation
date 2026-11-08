@@ -1,0 +1,12 @@
+D:\Real-Time Rain Intensity Detection and Video Deraining Using Deep Learning with Real and Multi-Intensity Synthetic Rain Data Systems\experiments_v2\jitter_test.py:7: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  mg = MG().to(dev); mg.load_state_dict(torch.load(ROOT / "experiments_v2" / "checkpoints" / "student_mg.pth", map_location=dev)["model_state_dict"]); mg.eval()
+front_road jitter +-0px sharpness ratio vs input: median9 0.96  MG-Net 0.96
+front_road jitter +-1px sharpness ratio vs input: median9 0.65  MG-Net 0.65
+front_road jitter +-2px sharpness ratio vs input: median9 0.54  MG-Net 0.57
+cctv_heavy jitter +-0px sharpness ratio vs input: median9 0.99  MG-Net 0.99
+cctv_heavy jitter +-1px sharpness ratio vs input: median9 0.62  MG-Net 0.62
+cctv_heavy jitter +-2px sharpness ratio vs input: median9 0.52  MG-Net 0.53
+cctv_medium jitter +-0px sharpness ratio vs input: median9 0.99  MG-Net 0.99
+cctv_medium jitter +-1px sharpness ratio vs input: median9 0.62  MG-Net 0.62
+cctv_medium jitter +-2px sharpness ratio vs input: median9 0.52  MG-Net 0.54
+DONE
